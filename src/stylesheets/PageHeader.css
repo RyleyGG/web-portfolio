@@ -1,0 +1,19 @@
+.Header {
+  background-color: #fffcfa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  text-align: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+}
+
+.SubHeader {
+    @extend .Header;
+    font-size: calc(10px + 1vmin);
+}
