@@ -96,7 +96,14 @@ const About = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <h2>Important Events</h2>
-                        <Timeline />
+                        <Timeline events={[
+                            { date: '2018', label: 'Started work at Del Mar Fans & Lighting' },
+                            { date: '2019', label: 'Graduated from Daytona State College' },
+                            { date: '2020', label: 'Transferred from DSC to ERAU' },
+                            { date: '2021', label: 'Started work at Prussian AI' },
+                            { date: '2022', label: 'Left DMF and Prussian AI to work at Purple Jay' },
+                            ]}
+                        />
                         <h2>Soft Skills</h2>
                         <Typography>
                             I have put great effort into continuing to develop my soft skills during my academic and professional endeavors.

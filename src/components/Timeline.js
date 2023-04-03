@@ -3,14 +3,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
 
-const events = [
-  { date: '2018', label: 'Started work at Del Mar Fans & Lighting' },
-  { date: '2019', label: 'Graduated from Daytona State College' },
-  { date: '2020', label: 'Transferred from DSC to ERAU' },
-  { date: '2021', label: 'Started work at Prussian AI' },
-  { date: '2022', label: 'Left DMF and Prussian AI to work at Purple Jay' },
-];
-
 const TimelineItem = ({ event }) => {
   const ItemWrapper = styled(Box)({
     display: 'flex',
@@ -39,7 +31,7 @@ const TimelineItem = ({ event }) => {
   );
 };
 
-const Timeline = () => {
+const Timeline = (props) => {
   const TimelineWrapper = styled(Box)({
     display: 'flex',
     justifyContent: 'space-between',
@@ -60,7 +52,7 @@ const Timeline = () => {
   return (
     <TimelineWrapper>
       <Line />
-      {events.map((event, index) => (
+      {props.events.map((event, index) => (
         <TimelineItem key={index} event={event} />
       ))}
     </TimelineWrapper>
