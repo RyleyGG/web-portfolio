@@ -1,7 +1,5 @@
 .Header {
   background-color: #fffcfa;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: top;
   text-align: center;

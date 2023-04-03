@@ -19,18 +19,11 @@ const PageHeader = (props) => {
                 <p>
                     Ryley's Portfolio
                 </p>
-
-                <Divider />
-
-                <p className='SubHeader'>
-                    {props.subHeader}
-                </p>
             </header>
             <AppBar position="static">
             <Toolbar sx={{ 
                 backgroundColor: '#fffcfa',
                 color: '#000000',
-                display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center' }}>
                 <Button
@@ -53,6 +46,9 @@ const PageHeader = (props) => {
                 </Button>
             </Toolbar>
             </AppBar>
+            <p className='SubHeader'>
+                {props.subHeader}
+            </p>
         </Grid2>
     );
 }

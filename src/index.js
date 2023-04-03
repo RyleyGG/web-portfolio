@@ -4,6 +4,8 @@ import { BrowserRouter, useNavigate, Route, Routes } from 'react-router-dom';
 import './stylesheets/index.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Projects from './pages/Projects';
+import Astrophotography from './pages/Astrophotography';
 import Experience from './pages/Experience';
 
 const App = () => {
