@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Astrophotography from './pages/Astrophotography';
 import Experience from './pages/Experience';
+import Professional from './pages/Professional';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path='/experience' element={<Experience />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/astrophotography' element={<Astrophotography />} />
+            <Route path='/professional' element={<Professional />} />
         </Routes>
       </BrowserRouter>
     );
