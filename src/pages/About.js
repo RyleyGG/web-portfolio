@@ -7,6 +7,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Timeline from '../components/Timeline';
+import { Divider } from '@mui/material';
 
 const About = () => {
     const [expanded, setExpanded] = React.useState(false);
@@ -55,46 +56,18 @@ const About = () => {
                     <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2bh-content"
-                    id="panel2bh-header"
-                    >
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}>Qualifications & Achievements</Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
-                        Academic
-                    </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <h2>High School</h2>
-                        <ul>
-                            <li>Three years of Cyber Patriot - a national cyber security competition sponsored by the Air Force Association among other institutions.</li>
-                            <li>Two years competing on the varsity team for Cyber Hawks - the Spruce Creek High division for Cyber Patriot</li>
-                            <li>Leading member of the Cyber Patriot Curriculum Committee during my time in the program.</li>
-                            <li>Co-leader of the AITR Student Curriculum Committee during my time in the program.</li>
-                            <li>Managed the Junior section of the AITR Haunted House fundraiser in October of 2016 - the 2nd most successful year at the time.</li>
-                            <li>Managed the entirety of the AITR Haunted House fundraiser in October of 2017 - doubling the sales from the year prior, making it by far the most successful year.</li>
-                            <li>Logistics manager of the AITR Ford Drive One fundraiser in my Junior year, raising thousands of dollars for AITR</li>
-                            <li>Dual enrolled at Daytona State College from January 2017 - May 2018. I further went on to graduate in Spring 2019 with an Associate's degree with honors.</li>
-                            <li>Member of the NSHSS, or the National Society of High School Scholars</li>
-                            <li>Four consecutive years of game and simulation development, and two consecutive years of computer programming during my time in AITR.</li>
-                            <li>Founder and manager of the AITR marketing committee during my Junior and Senior years of high school.</li>
-                            <li>Founder and manager of the AITR Christmas Drive event in 2016 & 2017.</li>
-                            <li>Senior Volusia CTE ambassador representing AITR during my Senior year in AITR.</li>
-                        </ul>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                    <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3bh-content"
-                    id="panel3bh-header"
+                    id="panel2 bh-header"
                     >
                     <Typography sx={{ width: '33%', flexShrink: 0 }}>
                         Qualifications & Achievements
                     </Typography>
                     <Typography sx={{ color: 'text.secondary' }}>
-                        Professional
+                        Academic & Professional
                     </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                        <h1>Skills & Events</h1>
+                        <br />
                         <h2>Important Events</h2>
                         <Timeline events={[
                             { date: '2018', label: 'Started work at Del Mar Fans & Lighting' },
@@ -139,6 +112,25 @@ const About = () => {
                             <li>C# proficiency: 4.5 years</li>
                             <li>MicrosoftSQL/MySQL advanced proficiency: 8.5 years</li>
                             <li>Python proficiency: 9 years</li>
+                        </ul>
+                        <Divider />
+                        <h1>Academic Achievements</h1>
+                        <br />
+                        <h2>High School</h2>
+                        <ul>
+                            <li>Three years of Cyber Patriot - a national cyber security competition sponsored by the Air Force Association among other institutions.</li>
+                            <li>Two years competing on the varsity team for Cyber Hawks - the Spruce Creek High division for Cyber Patriot</li>
+                            <li>Leading member of the Cyber Patriot Curriculum Committee during my time in the program.</li>
+                            <li>Co-leader of the AITR Student Curriculum Committee during my time in the program.</li>
+                            <li>Managed the Junior section of the AITR Haunted House fundraiser in October of 2016 - the 2nd most successful year at the time.</li>
+                            <li>Managed the entirety of the AITR Haunted House fundraiser in October of 2017 - doubling the sales from the year prior, making it by far the most successful year.</li>
+                            <li>Logistics manager of the AITR Ford Drive One fundraiser in my Junior year, raising thousands of dollars for AITR</li>
+                            <li>Dual enrolled at Daytona State College from January 2017 - May 2018. I further went on to graduate in Spring 2019 with an Associate's degree with honors.</li>
+                            <li>Member of the NSHSS, or the National Society of High School Scholars</li>
+                            <li>Four consecutive years of game and simulation development, and two consecutive years of computer programming during my time in AITR.</li>
+                            <li>Founder and manager of the AITR marketing committee during my Junior and Senior years of high school.</li>
+                            <li>Founder and manager of the AITR Christmas Drive event in 2016 & 2017.</li>
+                            <li>Senior Volusia CTE ambassador representing AITR during my Senior year in AITR.</li>
                         </ul>
                     </AccordionDetails>
                 </Accordion>
