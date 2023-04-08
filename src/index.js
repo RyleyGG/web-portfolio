@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Astrophotography from './pages/Astrophotography';
-import Experience from './pages/Experience';
 import Professional from './pages/Professional';
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/experience' element={<Experience />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/astrophotography' element={<Astrophotography />} />
             <Route path='/professional' element={<Professional />} />
